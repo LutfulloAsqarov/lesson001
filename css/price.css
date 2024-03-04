@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    animation: asd 2s 1 linear;
 }
 
 .price__top {
@@ -52,4 +53,24 @@ body {
     height: 150px;
     background-color: #fff;
     border: 20px solid brown;
+}
+
+
+@keyframes asd {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
 }
