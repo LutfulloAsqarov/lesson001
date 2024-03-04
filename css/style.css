@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #293462;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: end;
+    gap: 8px;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(39, 39, 227);
+    border-radius: 200px 200px 0 0;
+    overflow: hidden;
+}
+
+.stair {
+    background: #000;
+    height: 65px;
+    transform: translateX(300px);
+    animation: stair 1s 1 forwards linear;
+}
+
+.stair__one {
+    width: 300px;
+}
+
+.stair__two {
+    width: 240px;
+    animation-delay: .5s;
+
+}
+.stair__three {
+    width: 180px;
+    animation-delay: 1s;
+}
+
+.stair__four {
+    width: 120px;
+    animation-delay: 1.5s;
+}
+
+@keyframes stair {
+    from {
+        transform: translateX(300px);
+    }to {
+        transform: translateX(0);
+    }
+}
